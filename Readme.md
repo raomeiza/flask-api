@@ -17,14 +17,14 @@ __This is a simple API server__
 
   ## How to Run ##
   __Before you can run the server, make sure you have
-  1.  (**python**)[https://www.python.org/downlaods] downloaded and installed in your computer__
+  1.  [**python**](https://www.python.org/downlaods) downloaded and installed in your computer__
   2.  Install all the dependcies installed..
     * **Flask:** `pip install flask`
     * **flask_jwt_extended:** `pip install flask_jwt_extended`
     * **bcrypt:** `pip install bcrypt`
 
   __Having installed all the dependencies continue to__
-  * first, [Clone from ](https://github.com/raomeiza/flask-api)
+  * first, [Clone from here](https://github.com/raomeiza/flask-api)
   * open your cmd and navigate to the folder where you cloned the repo to
   * run __python main.py__
   that's it. you should have the server running at (http://127.0.0.1:5000)[http://127.0.0.1:5000] or another port (will be displayed on the console) if port 5000 is already in use
