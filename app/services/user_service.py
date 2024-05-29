@@ -3,6 +3,9 @@ from app.models.user_model import User
 from app.utils.mongo_to_dict import mongo_to_dict
 
 def register_user(username, password, admin, role):
+    existing_user = User.objects(username=username).first()
+    if existing_user is not None:
+        raise ValueError("Username already exists")
     password_hash = bcrypt.generate_password_hash(password).decode('utf-8')
     user = User(username = username, password = password_hash, admin = admin, role = role).save()
     return user
