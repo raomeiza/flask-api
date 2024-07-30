@@ -20,9 +20,9 @@ __This is a simple API server__
   1.  [**python**](https://www.python.org/downlaods) downloaded and installed in your computer__
   2.  Install all the dependcies installed..
    ## in Dev, IT is best to install and run in a virtual environment to avoid curroption of dependecies ##
-  * **unix systems:** run __setup.env.sh__
-  * **windows pc:** run __setup.env.bat__
-  ## in production mode, you don't realy care about module corruption so you just install using __pip install -r requirements.txt__##
+  * **unix systems:** run __./setup.env.sh__
+  * **windows pc:** run __./setup.env.bat__
+  ## in production mode, you don't realy care about module corruption so you just install using ## __pip install -r requirements.txt__
 
   ## Run the app ##
   after installing either in a virtual environment or other wise, run __python main.py__ to start the server.  
