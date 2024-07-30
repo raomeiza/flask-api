@@ -13,18 +13,17 @@ __This is a simple API server__
   * **MongoEnine:** A Module built on top of **PyMongo**. Brings ORM into the picture like **Mongoose**
 3.  ## **Authentication and Authorization**
   * **Flask_jwt_extended:** A straight forward and robust module for creating and consuming **JSON Web Tokens (JWT)** in **Python**
-  * **bcrypt:** A module for cryptographic purposes. I used this for password hashing and verification
+  * **flask_bcrypt:** A module for cryptographic purposes. I used this for password hashing and verification
 
   ## How to Run ##
   __Before you can run the server, make sure you have
   1.  [**python**](https://www.python.org/downlaods) downloaded and installed in your computer__
   2.  Install all the dependcies installed..
-    * **Flask:** `pip install flask`
-    * **flask_jwt_extended:** `pip install flask_jwt_extended`
-    * **bcrypt:** `pip install bcrypt`
+   ## in Dev, IT is best to install and run in a virtual environment to avoid curroption of dependecies ##
+  * **unix systems:** run __setup.env.sh__
+  * **windows pc:** run __setup.env.bat__
+  ## in production mode, you don't realy care about module corruption so you just install using __pip install -r requirements.txt__##
 
-  __Having installed all the dependencies continue to__
-  * first, [Clone from here](https://github.com/raomeiza/flask-api)
-  * open your cmd and navigate to the folder where you cloned the repo to
-  * run __python main.py__
+  ## Run the app ##
+  after installing either in a virtual environment or other wise, run __python main.py__ to start the server.  
   that's it. you should have the server running at (http://127.0.0.1:5000)[http://127.0.0.1:5000] or another port (will be displayed on the console) if port 5000 is already in use
